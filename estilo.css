@@ -17,6 +17,10 @@
     padding: 30px;
 }
 
+.caja h2{
+    margin-top: 50px;
+}
+
 @media(width > 1000px){ /*aplico un media (En caso de que width sea mayor a 1000)*/
     .caja{
         background-color: brown; /*Cambiar el color de fondo de la clase caja*/
