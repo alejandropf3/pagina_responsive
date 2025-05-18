@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+main{ /*Aplicamos dimenciones exactas para el main*/
+    width: 100%;
+    height: 100vh;
+}
+
 /*Punto 1*/
 .caja{ /*Se aplica estilo a la caja*/
     background-color: cornflowerblue;
@@ -21,8 +26,445 @@
     margin-top: 50px;
 }
 
-@media(width > 1000px){ /*aplico un media (En caso de que width sea mayor a 1000)*/
+@media(width > 700px){ /*aplico un media (En caso de que width sea mayor a 1000)*/
     .caja{
         background-color: brown; /*Cambiar el color de fondo de la clase caja*/
     }
+}
+
+/*Desarollo del punto 2*/
+.caja2{ /*Se aplica estilo a la caja*/
+    background-color: rgb(0, 255, 34);
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid black;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin-top: 15px;
+    padding: 30px;
+
+}
+
+.caja2 h2{
+    margin-top: 50px;
+}
+
+@media(min-width: 768px){ /*Aplico el primer breackpoint con un ancho minimo de 768pixeles*/
+    .caja2{ /*Al superar los 768 pixeles (se aplican cambios en las dimenciones y estilo*/
+        background-color: yellow;
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+    }
+    .caja2 h2{
+        margin-top: 50%;
+    }
+}
+
+@media(min-width: 992px){ /*Aplico el primer breackpoint con un ancho minimo de 992pixeles*/
+        .caja2{ /*Si supera los 992 pixeles (aplicar cambios de diencion)*/
+        background-color: rgb(255, 0, 0);
+        height: 300px;
+        width: 300px;
+        border-radius: 10px;
+    }
+    .caja2 h2{
+        margin-top: 50%;
+    }
+}
+
+@media(min-width: 1200px){ /*Aplico el primer breackpoint con un ancho minimo de 1200pixeles*/
+        .caja2{ /*Si supera los 1200 pixeles (aplicar cambios de dimenciones)*/
+        background-color: rgb(93, 0, 255);
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+}
+
+/*Punto 3*/
+@media(max-width: 576px){ /*Aplicamos el primer break point para pantalla pequeña*/
+    .formato_mobile{ /*Aplicamos estilos al contenedor*/
+        background-color: darkgrey;
+        border: 2px solid black;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .contenido h1{ /*Aplicamos estilo al titulo*/
+        color: crimson;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .contenido p{ /*Aplicamos estilo a el parrafo de texto*/
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        margin-top: 40px;
+    }
+
+}
+
+
+@media(min-width: 577px ){ /*Break point para pantallas no tan pequeñas*/
+     .formato_mobile{
+        background-color: darkgrey;
+        border: 2px solid black;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .contenido h1{
+        color:deeppink;
+        font-weight: 900;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .contenido p{
+        font-size: 35px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 900;
+        margin-top: 60px;
+
+    }
+}
+
+@media(min-width: 768px ){ /*Breack point para pantallas medianas*/
+     .formato_mobile{
+        background-color: darkgrey;
+        border: 2px solid black;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .contenido h1{
+        color:rgb(51, 0, 255);
+        font-weight: 1000;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .contenido p{
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        margin-top: 60px;
+
+    }
+}
+
+@media(min-width: 1200px ){ /*breakpoint para pantallas grandes*/
+     .formato_mobile{
+        background-color: darkgrey;
+        border: 2px solid black;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .contenido h1{
+        color:rgb(145, 255, 0);
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .contenido p{
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 900;
+        margin-top: 70px;
+        text-align: justify;
+    }
+}
+
+
+section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.principal{
+    background-color: rgb(246, 85, 85);
+    padding: 1rem;
+    width: 75%;
+    height: 100%;
+    position: absolute;
+}
+
+.principal h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.principal p{
+    margin-top: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+.lateral{
+    background-color: cornflowerblue;
+    padding: 1rem;
+    width: 25%;
+    height: 100%;
+    float: right;
+}
+
+.imagen{
+    height: 200px;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+.imagen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+@media(max-width: 992px){
+    .principal{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    width: 75%;
+    height: 100%;
+    position: absolute;
+}
+
+.principal h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.principal p{
+    margin-top: 25px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+.lateral{
+    background-color: rgb(100, 237, 230);
+    padding: 1rem;
+    width: 25%;
+    height: 100%;
+    float: right;
+}
+
+.imagen{
+    height: 200px;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+.imagen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+@media(max-width: 768px){
+    .principal{
+    background-color: rgb(255, 209, 136);
+    padding: 1rem;
+    width: 75%;
+    height: 100%;
+    position: absolute;
+}
+
+.principal h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.principal p{
+    margin-top: 25px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+.lateral{
+    background-color: rgb(99, 255, 219);
+    padding: 1rem;
+    width: 25%;
+    height: 100%;
+    float: right;
+}
+
+.imagen{
+    height: 200px;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+.imagen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+@media(max-width: 992px){
+    .principal{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    width: 75%;
+    height: 100%;
+    position: absolute;
+}
+
+.principal h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.principal p{
+    margin-top: 25px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+.lateral{
+    background-color: rgb(100, 237, 230);
+    padding: 1rem;
+    width: 25%;
+    height: 100%;
+    float: right;
+}
+
+.imagen{
+    height: 200px;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+.imagen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+@media(max-width: 768px){
+    .principal{
+    background-color: rgb(139, 207, 250);
+    padding: 1rem;
+    width: 100%;
+    height: 50%;
+}
+
+.principal h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.principal p{
+    margin-top: 20px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+.lateral{
+    background-color: rgb(64, 255, 182);
+    padding: 1rem;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+}
+
+.imagen{
+    height: 200px;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+.imagen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+@media(max-width: 576px){
+    .principal{
+    background-color: rgb(245, 214, 164);
+    padding: 1rem;
+    width: 100%;
+    height: 50%;
+}
+
+.principal h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.principal p{
+    margin-top: 15px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-align: justify;
+}
+
+
+.lateral{
+    background-color: rgb(99, 255, 107);
+    padding: 1rem;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+}
+
+.imagen{
+    height: 200px;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+.imagen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 }
