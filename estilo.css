@@ -189,15 +189,15 @@ main{ /*Aplicamos dimenciones exactas para el main*/
     }
 }
 
-
-section{
+/*PUNTO 4*/
+section{ /*Creamos el contenedor principal*/
     height: 100vh;
     width: 100%;
     position: relative;
     text-align: center;
 }
 
-.principal{
+.principal{ /*Hacemos una caja principal*/
     background-color: rgb(246, 85, 85);
     padding: 1rem;
     width: 75%;
@@ -205,12 +205,12 @@ section{
     position: absolute;
 }
 
-.principal h1{
+.principal h1{ 
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
-.principal p{
+.principal p{ /*cambiamos el tipo y tamaño de letra*/
     margin-top: 30px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
@@ -218,7 +218,7 @@ section{
 }
 
 
-.lateral{
+.lateral{ /*Se crea una barra lateral*/
     background-color: cornflowerblue;
     padding: 1rem;
     width: 25%;
@@ -226,7 +226,7 @@ section{
     float: right;
 }
 
-.imagen{
+.imagen{ /*Contenedor de imagen*/
     height: 200px;
     width: 150px;
     margin: 0 auto;
@@ -234,15 +234,15 @@ section{
     border: 3px solid black;
     border-radius: 4px;
 }
-.imagen img{
+.imagen img{ /*Asignamos dimenciones a la imagen*/
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
 
-
-@media(max-width: 992px){
+/*Desde este punto en adelante, añadimos los breakpoints*/
+@media(max-width: 992px){ 
     .principal{
     background-color: rgb(255, 255, 255);
     padding: 1rem;
@@ -466,5 +466,118 @@ section{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+}
+/*Fin de los breakpoints*/
+
+/*PUNTO 5*/
+
+.menu{
+    margin: 0 auto;
+    border: solid 3px black;
+    border-radius: 5px;
+    background-color: lightskyblue;
+    height: 50%;
+    width: 70%;
+    padding: 1rem;
+    position: relative;
+}
+
+.Nombre{
+    display: inline-block;
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.Contraseña{
+    display: inline-block;
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.Correo{
+    display: inline-block;
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.Documento{
+    display: inline-block;
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+@media(max-width: 700px){
+    .menu{
+    margin: 0 auto;
+    border: solid 3px black;
+    border-radius: 5px;
+    background-color: lightskyblue;
+    height: 70%;
+    width: 80%;
+    padding: 1rem;
+    position: relative;
+}
+
+.Nombre{
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.Contraseña{
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.Correo{
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.Documento{
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+}
+
+
+@media(max-width: 576px){
+    .menu{
+    margin: 0 auto;
+    border: solid 3px black;
+    border-radius: 5px;
+    background-color: lightskyblue;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+}
+
+.Nombre{
+    display: inline-block;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+.Contraseña{
+    display: inline-block;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+.Correo{
+    display: inline-block;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+.Documento{
+    display: inline-block;
+    font-size: 25px;
+    margin: 10px 0px;
 }
 }
