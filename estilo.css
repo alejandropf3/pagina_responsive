@@ -484,25 +484,25 @@ section{ /*Creamos el contenedor principal*/
 }
 
 .Nombre{
-    display: inline-block;
+
     font-size: 30px;
     margin: 10px 0px;
 }
 
 .Contraseña{
-    display: inline-block;
+
     font-size: 30px;
     margin: 10px 0px;
 }
 
 .Correo{
-    display: inline-block;
+
     font-size: 30px;
     margin: 10px 0px;
 }
 
 .Documento{
-    display: inline-block;
+
     font-size: 30px;
     margin: 10px 0px;
 }
@@ -580,4 +580,174 @@ section{ /*Creamos el contenedor principal*/
     font-size: 25px;
     margin: 10px 0px;
 }
+}
+
+/*PUNTO 6*/
+
+.caja3{
+    height: 500px;
+    width: 400px;
+    background-color: rgb(253, 228, 174);
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.caja3 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.caja3 p{
+    font-size: 17px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+@media(min-width: 768px){
+ .caja3{
+    height: 600px;
+    width: 400px;
+    background-color: rgb(253, 228, 174);
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+}
+
+    .caja3 p{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: justify;
+}
+}
+
+@media(min-width: 992px){
+    .caja3{
+    height: 900px;
+    width: 400px;
+    background-color: rgb(253, 228, 174);
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+}
+    .caja3 p{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: justify;
+}
+}
+
+@media(min-width: 1200px){
+    .caja3{
+    height: 1400px;
+    width: 400px;
+    background-color: rgb(253, 228, 174);
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+}
+    .caja3 p{
+    font-size: 35px;
+    font-weight: 800;
+    text-align: justify;
+}
+}
+
+/*PUNTO 11*/
+
+.em1{ /*Se aplica estilo a la caja*/
+    background-color: rgb(237, 100, 141);
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid black;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin-top: 15px;
+    padding: 30px;
+}
+
+.rem2{ /*Se aplica estilo a la caja*/
+    background-color: rgb(98, 241, 199);
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid black;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin-top: 15px;
+    padding: 30px;
+}
+
+@media(min-width: 40em) and (max-width: 100em){ /*Aplicamos un breakpoint con medidas em*/
+    .em1{ 
+    background-color: rgb(228, 237, 100);
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid black;
+    height: 400px;
+    width: 200px;
+    position: relative;
+    margin-top: 15px;
+    padding: 30px;
+}
+}
+
+@media(min-width: 40rem) and (max-width: 100rem){ /*Aplicamos un breakpoint con medidas rem*/
+    .rem2{ 
+    background-color: rgb(212, 81, 245);
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid black;
+    height: 200px;
+    width: 400px;
+    position: relative;
+    margin-top: 15px;
+    padding: 30px;
+}
+}
+
+
+/*PUNTO 12*/
+.carta{ /*Se crea un elemento card*/
+    margin: 0 auto;
+    margin-top: 40px;
+    border: solid 5px black;
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    background-image: url(imagenes/la\ kabra.jpg); /*Asignamos una imagen de fondo base*/
+    background-size: cover;
+    background-position: top, center;
+    position: relative;
+}
+
+.carta h1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media(min-width: 768px) and (max-width: 992px){ /*Aplicamos un breakpoint que cambiara la imagen de fondo*/
+    .carta{
+        background-image: url(imagenes/puro-humo.jpg);
+    }
+}
+
+@media(min-width: 993px) and (max-width: 3500px){ /*Aplicamos un segundo breakpoint que cambiara la imagen de fondo*/
+    .carta{
+        background-image: url(imagenes/el\ señor\ humo.jpg);
+    }
 }
