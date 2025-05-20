@@ -662,6 +662,54 @@ section{ /*Creamos el contenedor principal*/
 }
 }
 
+/*PUNTO 9*/
+.hoja{
+    margin: 0 auto;
+    margin-top: 70px;
+    border: solid 2px rgba(0, 0, 0, 0.144);
+    box-shadow: 4px 3px 9px black;
+    height: 700px;
+    width: 500px;
+    text-align: center;
+    padding: 1em;
+}
+
+.hoja h1{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0px;
+}
+
+article{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+h3{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.parrafo{
+    margin-top: 30px;
+}
+
+@media print{
+    .hoja h1{
+        color: brown;
+    }
+
+    .parrafo{
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    h3{
+        font-weight: bold;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+}
 /*PUNTO 11*/
 
 .em1{ /*Se aplica estilo a la caja*/
@@ -751,3 +799,4 @@ section{ /*Creamos el contenedor principal*/
         background-image: url(imagenes/el\ señor\ humo.jpg);
     }
 }
+
